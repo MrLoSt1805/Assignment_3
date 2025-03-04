@@ -63,6 +63,25 @@ class StudentOperations {
         }
     }
 
+    public void updateStudent() {
+        System.out.print("Enter PRN to update: ");
+        String prn = sc.nextLine();
+        for (Student s : students) {
+            if (s.prn.equals(prn)) {
+                System.out.print("Enter New Name: ");
+                s.name = sc.nextLine();
+                System.out.print("Enter New DoB: ");
+                s.dob = sc.nextLine();
+                System.out.print("Enter New Marks: ");
+                s.marks = sc.nextDouble();
+                sc.nextLine();
+                System.out.println("Student Updated Successfully!");
+                return;
+            }
+        }
+        System.out.println("Student not found!");
+    }
+
     
 }
     
