@@ -82,6 +82,18 @@ class StudentOperations {
         System.out.println("Student not found!");
     }
 
-    
+    public void deleteStudent() {
+        System.out.print("Enter PRN to delete: ");
+        String prn = sc.nextLine();
+        for (Student s : students) {
+            if (s.prn.equals(prn)) {
+                students.remove(s);
+                System.out.println("Student Deleted Successfully!");
+                return;
+            }
+        }
+        System.out.println("Student not found!");
+    }
+}
 }
     
