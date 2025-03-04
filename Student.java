@@ -1,4 +1,4 @@
-// Main.java
+// student.java
 // Name: Daniel John Jacob
 // PRN: 23070126027
 // Batch: AIML A2, 2023-27
