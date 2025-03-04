@@ -18,5 +18,15 @@ class StudentOperations {
         System.out.println("Student Added Successfully!");
     }
 
-    
+    public void displayStudents() {
+        if (students.isEmpty()) {
+            System.out.println("No students found!");
+            return;
+        }
+        for (Student s : students) {
+            s.display();
+        }
+    }
+
+
 }
