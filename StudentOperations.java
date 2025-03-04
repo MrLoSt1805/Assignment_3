@@ -40,5 +40,16 @@ class StudentOperations {
         System.out.println("Student not found!");
     }
 
-    
+    public void searchByName() {
+        System.out.print("Enter Name to search: ");
+        String name = sc.nextLine();
+        for (Student s : students) {
+            if (s.name.equalsIgnoreCase(name)) {
+                s.display();
+                return;
+            }
+        }
+        System.out.println("Student not found!");
+    }
 }
+    
