@@ -28,5 +28,17 @@ class StudentOperations {
         }
     }
 
+    public void searchByPRN() {
+        System.out.print("Enter PRN to search: ");
+        String prn = sc.nextLine();
+        for (Student s : students) {
+            if (s.prn.equals(prn)) {
+                s.display();
+                return;
+            }
+        }
+        System.out.println("Student not found!");
+    }
 
+    
 }
