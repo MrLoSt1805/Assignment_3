@@ -51,5 +51,18 @@ class StudentOperations {
         }
         System.out.println("Student not found!");
     }
+
+    public void searchByPosition() {
+        System.out.print("Enter Position to search: ");
+        int pos = sc.nextInt();
+        sc.nextLine();
+        if (pos >= 1 && pos <= students.size()) {
+            students.get(pos - 1).display();
+        } else {
+            System.out.println("Invalid position!");
+        }
+    }
+
+    
 }
     
